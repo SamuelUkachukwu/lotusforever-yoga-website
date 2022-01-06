@@ -1,168 +1,257 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Lato&family=Roboto:wght@300&display=swap');
+
 * {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     background: url(../images/hero-image.jpg) no-repeat right top;
     background-size: cover;
-    background-attachment:fixed;
-  }
+    background-attachment: fixed;
+}
+
 header {
-    width:100%;
+    width: 100%;
     height: 60px;
     background-color: #1A71C1;
     position: fixed;
     top: 0;
     z-index: 333;
-  }
-  #header-logo {
-    float:left;
+}
+
+#header-logo {
+    float: left;
     font-size: 175%;
     line-height: 60px;
     text-decoration: none;
     margin-left: 30px;
-  }
-  .company-image-logo {
+}
+
+.company-image-logo {
     width: 150px;
     height: 150px;
     border: 2px solid #fff;
     border-radius: 90px;
-  }
-  .logo {
-    color:#000;
+}
+
+.logo {
+    color: #000;
     font-family: 'Cinzel Decorative', cursive;
     text-transform: uppercase;
-  }
-  #menu {
+}
+
+#menu {
     font-size: 110%;
     letter-spacing: 2px;
-  }
-  
-  #menu li {
-    float:right;
+}
+
+#menu li {
+    float: right;
     list-style: none;
     margin-right: 30px;
-  }
-  
-  #menu a {
-   text-decoration:none;
-   color:#fff;
-   font-family: 'Lato', sans-serif;
-   font-weight: 400;
-   line-height: 60px;
-  }
-  
-  #menu a:hover {
-    color:#FF1789;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+#menu a:hover {
+    color: #FF1789;
     border-bottom: 2px solid #FF1789;
-  }
-  /* hero container styling */
-  #hero-container {
+}
+
+/* hero container styling */
+#hero-container {
     width: 100%;
     height: 100vh;
     position: relative;
-  }
-  
-  #hero-cover-text {
-    clear:both;
+}
+
+#hero-cover-text {
+    clear: both;
     text-align: center;
-    background-color:rgba(255, 23, 137, 0.3 );
+    background-color: rgba(255, 23, 137, 0.3);
     padding: 20px;
     border-radius: 5px;
     width: 80%;
     position: absolute;
-    top:60%;
-    left:50%;
-    transform: translate(-50%,-40%);
-  }
-  /* social menue styling */
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+/* social menue styling */
 #social-menu-box {
     position: absolute;
-    top:80%;
-    left:40%;
-  }
-  .social-menu li {
+    top: 80%;
+    left: 40%;
+}
+
+.social-menu li {
     display: inline;
-  }
-  .social-menu a {
-  color:#fff;
-  font-size: 25px;
-  margin-left: 20px;
-  }
-  .social-menu a:hover {
+}
+
+.social-menu a {
+    color: #fff;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.social-menu a:hover {
     color: #FF1789;
-  }
-  /* about us styling */
-  #about-us {
+}
+
+/* about us styling */
+#about-us {
     background-color: #bcbcbc;
     padding: 20px 0px 20px 0px;
     width: 100%;
     height: 50%;
-    }
-    #about-us-content {
-      width: 95%;
-      padding: 20px;
-      margin: 0 auto;
-      background-color: #fff;
-      border-radius: 5px;
-    }
-    .left-about {
-    width:30%;
+}
+
+#about-us-content {
+    width: 95%;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.left-about {
+    width: 30%;
     height: 30vh;
-    float:left;
+    float: left;
     padding: 0;
     position: relative;
-    }
-    #about-logo {
+}
+
+#about-logo {
     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    }
-    .middle-about {
-    width:20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.middle-about {
+    width: 20%;
     height: 30vh;
     margin: 0 40% 0 30%;
     padding: 10px;
     position: relative;
-    }
-    #about-image {
-      position:absolute;
-      padding: 10px;
-      top:50%;
-      left:50%;
-      transform: translate(-50%,-50%);
-    }
-    .right-about {
-    width:50%;
+}
+
+#about-image {
+    position: absolute;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.right-about {
+    width: 50%;
     height: 30vh;
-    float:right;
+    float: right;
     padding: 0;
     position: relative;
-    }
-    #about-text-container {
-      width: 100%;
-      position: absolute;
-      top:50%;
-      left:50%;
-      transform: translate(-50%,-50%);
-    }
-    .about-text {
-      padding: 10px;
-      margin: 0 auto;
-      text-align:justify;
-    }
-    /* gallery styling starts here */
-    #classes-gallery {
-        background-color: #bcbcbc;
-      }
-      #row1 {
-        display:flex;
-        overflow-x: scroll;
-      }
-      .col {
-        margin: 20px;
-      }
+}
+
+#about-text-container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-text {
+    padding: 10px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+/* gallery styling starts here */
+#classes-gallery {
+    background-color: #bcbcbc;
+}
+
+#row1 {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.col {
+    margin: 20px;
+}
+
+/* pick classes styling start here */
+#classes-gallery {
+    background-color: #bcbcbc;
+}
+
+#row1 {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.col {
+    margin: 20px;
+}
+
+/* styling of the pick a class page starts here */
+#yoga-classes {
+    background-color: #fff;
+    width: 100%;
+    height: 50vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: auto;
+}
+#row2 {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.classes-main-header {
+    text-align: center;
+    padding: 10px;
+}
+
+.card {
+    width: 30%;
+    background-color: #5894CC;
+    margin: 5px;
+    float: left;
+}
+
+.classes-header {
+    display: block;
+    background-color: #ff1789;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-texts {
+    padding: 20px;
+    height: 20vh;
+}
+.prices {
+    background-color: #fff;
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+.signup-link {
+    margin-top: 20px;
+    background-color: #092642;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
