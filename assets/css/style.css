@@ -5,7 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+h2, h3 {
+    font-family: 'Lato', sans-serif;
+}
 body {
     font-family: 'Roboto', sans-serif;
     background: url(../images/hero-image.jpg) no-repeat right top;
@@ -232,7 +234,7 @@ header {
 
 #row2 {
     width: 80%;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 .classes-main-header {
