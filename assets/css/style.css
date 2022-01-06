@@ -11,6 +11,7 @@ body {
     background: url(../images/hero-image.jpg) no-repeat right top;
     background-size: cover;
     background-attachment: fixed;
+    background-color: #bcbcbc;
 }
 
 header {
@@ -84,9 +85,11 @@ header {
     width: 100%;
     height: 100vh;
     position: relative;
+    clear: both;
 }
 
-#hero-cover-text {
+#hero-cover-text-box {
+    color: #fff;
     clear: both;
     text-align: center;
     background-color: rgba(255, 23, 137, 0.3);
@@ -337,6 +340,85 @@ button {
 button:hover {
     background-color: #F59565;
     color: #000;
+}
+
+/* contact-us styling */
+#contact-us {
+    background-color: #fff;
+    width: 100%;
+}
+
+#contact-us-container {
+    width: 90%;
+    height: 55vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+#contact-logo-image {
+    border: 4px solid #5894CC;
+    position: absolute;
+    z-index: 333;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#contact-us-header {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.left-box {
+    width: 50%;
+    height: 40vh;
+    background-color: #5894CC;
+    float: left;
+    position: relative;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+textarea {
+    width: 70%;
+    padding: 5px;
+    resize: none;
+    background-color: #E3E3E3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.right-box {
+    width: 50%;
+    height: 40vh;
+    float: right;
+    background-color: #5894CC;
+    position: relative;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.detail-field {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#address {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.tabs {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 80%;
+    padding: 20px;
 }
 
 /* footer styling */
