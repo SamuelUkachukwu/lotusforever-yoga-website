@@ -1,1 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Lato&family=Roboto:wght@300&display=swap');
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
