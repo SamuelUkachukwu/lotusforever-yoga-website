@@ -87,7 +87,7 @@ header {
     transform: translate(-50%, -40%);
 }
 
-/* social menue styling */
+/* social menu styling */
 #social-menu-box {
     position: absolute;
     top: 80%;
@@ -349,3 +349,109 @@ footer {
 #footer-social-menu {
     float: right;
 }
+
+/* media querry styling start here */
+/* media screen for tablets and screen size 1200px  */
+@media screen and (max-width: 1200px) {
+    #contact-logo-image {
+        top: 80%;
+    }
+
+    .footer-container {
+        width: 95%;
+    }
+
+}
+
+/* media screen for devices and screen size 950px  */
+@media screen and (max-width: 950px) {
+    .left-about {
+        width: 100%;
+        height: 10vh;
+    }
+
+    .middle-about {
+        margin: 10vh 0 0 0;
+    }
+
+    .right-about {
+        width: 80%;
+    }
+
+    #row2 {
+        width: 90%;
+    }
+
+    #footer-social-menu,
+    .row {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    #contact-logo-image {
+        top: 90%;
+    }
+}
+/* media screen for devices and screen size 768px  */
+@media screen and (max-width: 768px) {
+    .middle-about {
+        clear: both;
+        width: 100%;
+        height: 10vh;
+    }
+
+    .company-image-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .right-about {
+        clear: both;
+        width: 100%;
+    }
+
+    body {
+        background: url(../images/womantest2.jpg) no-repeat center center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    #menu li {
+        margin-right: 20px;
+    }
+
+    #social-menu-box {
+        left: 40%;
+    }
+
+    #row2 {
+        width: 100%;
+    }
+
+    #right {
+        display: none;
+    }
+}
+
+/* media screen for devices and screen size 600px  */
+@media screen and (max-width: 600px) {
+    #social-menu-box {
+      left:25%;
+    }
+    #menu {
+      clear:left;
+      float:left;
+      margin-left:30px;
+      line-height: 10px;
+      }
+      header {
+        height: 110px;
+      }
+      .card {
+        width: 50%;
+        float: none;
+        margin: 10px auto;
+      }
+    
+    }
