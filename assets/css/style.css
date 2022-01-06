@@ -11,6 +11,12 @@ h3 {
     font-family: 'Lato', sans-serif;
 }
 
+.section-header {
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background: url(../images/hero-image.jpg) no-repeat right top;
@@ -226,10 +232,7 @@ header {
     margin: 0 auto;
 }
 
-.classes-main-header {
-    text-align: center;
-    padding: 20px;
-}
+
 
 .card {
     border-radius: 10px;
@@ -371,11 +374,6 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-#contact-us-header {
-    text-align: center;
-    padding: 20px 0px;
 }
 
 .left-box {
