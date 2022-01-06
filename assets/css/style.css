@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #919297;
     font-family: 'Roboto', sans-serif;
     background: url(../images/hero-image.jpg) no-repeat right top;
     background-size: cover;
@@ -25,6 +24,12 @@ header {
     line-height: 60px;
     text-decoration: none;
     margin-left: 30px;
+  }
+  .company-image-logo {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #fff;
+    border-radius: 90px;
   }
   .logo {
     color:#000;
@@ -54,3 +59,99 @@ header {
     color:#FF1789;
     border-bottom: 2px solid #FF1789;
   }
+  /* hero container styling */
+  #hero-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  
+  #hero-cover-text {
+    clear:both;
+    text-align: center;
+    background-color:rgba(255, 23, 137, 0.3 );
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    position: absolute;
+    top:60%;
+    left:50%;
+    transform: translate(-50%,-40%);
+  }
+  /* social menue styling */
+#social-menu-box {
+    position: absolute;
+    top:80%;
+    left:40%;
+  }
+  .social-menu li {
+    display: inline;
+  }
+  .social-menu a {
+  color:#fff;
+  font-size: 25px;
+  margin-left: 20px;
+  }
+  .social-menu a:hover {
+    color: #FF1789;
+  }
+  /* about us styling */
+  #about-us {
+    background-color: #bcbcbc;
+    padding: 20px 0px 20px 0px;
+    width: 100%;
+    height: 50%;
+    }
+    #about-us-content {
+      width: 95%;
+      padding: 20px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+    .left-about {
+    width:30%;
+    height: 30vh;
+    float:left;
+    padding: 0;
+    position: relative;
+    }
+    #about-logo {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    }
+    .middle-about {
+    width:20%;
+    height: 30vh;
+    margin: 0 40% 0 30%;
+    padding: 10px;
+    position: relative;
+    }
+    #about-image {
+      position:absolute;
+      padding: 10px;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+    }
+    .right-about {
+    width:50%;
+    height: 30vh;
+    float:right;
+    padding: 0;
+    position: relative;
+    }
+    #about-text-container {
+      width: 100%;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+    }
+    .about-text {
+      padding: 10px;
+      margin: 0 auto;
+      text-align:justify;
+    }
