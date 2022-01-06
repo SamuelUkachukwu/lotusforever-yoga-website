@@ -43,6 +43,18 @@ header {
     text-transform: uppercase;
 }
 
+.link-texts {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.link-texts:hover {
+    color: #FF1789;
+}
+
 #menu {
     font-size: 110%;
     letter-spacing: 2px;
@@ -393,6 +405,7 @@ footer {
         top: 90%;
     }
 }
+
 /* media screen for devices and screen size 768px  */
 @media screen and (max-width: 768px) {
     .middle-about {
@@ -412,7 +425,7 @@ footer {
     }
 
     body {
-        background: url(../images/womantest2.jpg) no-repeat center center;
+        background: url(../images/hero-image-small.jpg) no-repeat center center;
         background-attachment: fixed;
         background-size: cover;
     }
@@ -422,7 +435,7 @@ footer {
     }
 
     #social-menu-box {
-        left: 40%;
+        left: 35%;
     }
 
     #row2 {
@@ -437,21 +450,24 @@ footer {
 /* media screen for devices and screen size 600px  */
 @media screen and (max-width: 600px) {
     #social-menu-box {
-      left:25%;
+        left: 20%;
     }
+
     #menu {
-      clear:left;
-      float:left;
-      margin-left:30px;
-      line-height: 10px;
-      }
-      header {
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        line-height: 10px;
+    }
+
+    header {
         height: 110px;
-      }
-      .card {
+    }
+
+    .card {
         width: 50%;
         float: none;
         margin: 10px auto;
-      }
-    
     }
+
+}
