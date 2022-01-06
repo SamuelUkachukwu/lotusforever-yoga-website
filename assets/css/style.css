@@ -36,6 +36,10 @@ header {
     margin-left: 30px;
 }
 
+#logo-font {
+    color: #FF1789;
+}
+
 .company-image-logo {
     width: 150px;
     height: 150px;
@@ -214,7 +218,7 @@ header {
 /* pick classes styling start here */
 #classes-container {
     background-color: #fff;
-    padding: 40px 0;
+    padding: 50px 0;
 }
 
 #classes-box {
@@ -284,6 +288,7 @@ header {
     width: 100%;
     background-color: #bcbcbc;
     margin: 0px;
+    padding: 40px 0px;
 }
 
 .registration-container {
@@ -316,7 +321,7 @@ header {
     box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-input {
+.input-area {
     margin: 5px 0px;
     width: 100%;
     padding: 5px;
@@ -341,8 +346,8 @@ button {
     color: #fff;
 }
 
-button:hover {
-    background-color: #F59565;
+.buttons:hover {
+    background-color: #f88dc1;
     color: #000;
 }
 
@@ -383,15 +388,30 @@ button:hover {
     box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-textarea {
+#text-here {
     width: 70%;
     padding: 5px;
     resize: none;
     background-color: #E3E3E3;
+    border-radius: 5px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+select {
+    background-color: #E3E3E3;
+}
+
+#text-here:hover,
+.input-area:hover {
+    background-color: #ccc;
+}
+
+#text-here:focus,
+.input-area:focus {
+    background-color: #fff;
 }
 
 .right-box {

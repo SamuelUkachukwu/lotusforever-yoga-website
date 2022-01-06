@@ -16,12 +16,12 @@
 <body>
     <header style="position:relative">
         <a href="index.html">
-            <h1 class="logo" id="header-logo">Lotusforever <span><i class="fas fa-spa"></i></span></h1>
+            <h1 id="header-logo" class="logo">Lotusforever <span id="logo-font"><i class="fas fa-spa"></i></span></h1>
         </a>
         <nav>
             <ul id="menu">
                 <li><a href="index.html#registration" aria-label="go to sign up page">Sign Up</a></li>
-                <li><a href="index.html#classes" aria-label="go to pick a suitable class section">Classes</a></li>
+                <li><a href="index.html#classes-container" aria-label="go to pick a suitable class section">Classes</a></li>
                 <li><a href="index.html" class="active" aria-label="go to top of page">Home</a></li>
             </ul>
         </nav>
@@ -32,24 +32,24 @@
 
             <img id="contact-logo-image" class="company-image-logo" src="assets/images/icon.png" alt="company logo">
             <div>
-                <h3 id="contact-us-header">If you have any Queries or Enquiries please fill out the form</h3>
+                <h3 id="contact-us-header">If you have any Queries or Enquiries, please fill out the form</h3>
             </div>
             <form class="" action="#" method="post">
                 <div class="left-box">
-                    <textarea name="name" rows="8" placeholder="Queries and Enquiries..."></textarea>
+                    <textarea id="text-here" name="name" rows="8" placeholder="Queries and Enquiries..."></textarea>
                 </div>
                 <div class="right-box">
                     <div class="detail-field">
                         <div>
                             <label for="fullname">Full Name:</label><br>
-                            <input id="fullname" type="text" name="fullname" placeholder="Full Name..." required>
+                            <input id="fullname" class="input-area" type="text" name="fullname" placeholder="Full Name..." required>
                         </div>
                         <div>
                             <label for="email">Email:</label><br>
-                            <input id="email" type="email" name="email" placeholder="example@email.com..." required>
+                            <input id="email" class="input-area" type="email" name="email" placeholder="example@email.com..." required>
                         </div>
                         <div>
-                            <button type="submit"><strong>Submit</strong></button>
+                            <button class="buttons" type="submit"><strong>Submit</strong></button>
                         </div>
                     </div>
 

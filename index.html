@@ -16,12 +16,12 @@
 <body>
     <header>
         <a href="index.html">
-            <h1 id="header-logo" class="logo">Lotusforever <i class="fas fa-spa"></i></h1>
+            <h1 id="header-logo" class="logo">Lotusforever <span id="logo-font"><i class="fas fa-spa"></i></span></h1>
         </a>
         <nav>
             <ul id="menu">
                 <li><a href="#registration" aria-label="go to sign up section">Sign Up</a></li>
-                <li><a href="#classes" aria-label="go to pick a suitable class section">Classes</a></li>
+                <li><a href="#classes-container" aria-label="go to pick a suitable class section">Classes</a></li>
                 <li><a href="index.html" class="active" aria-label="go to top of page">Home</a></li>
             </ul>
         </nav>
@@ -29,7 +29,7 @@
     <!-- hero section (hero-container) is fixed and contents scroll over it under the nav bar -->
     <section id="hero-container">
         <div id="hero-cover-text-box">
-            <h2 id="hero-cover-text">"There is always room for change, but you have to be open to that change.”<br>
+            <h2>"There is always room for change, but you have to be open to that change.”<br>
                 <span>— Kathryn Budig</span></h2>
         </div>
         <div id="social-menu-box">
@@ -233,7 +233,7 @@
                             <option value="50s">50-59</option>
                             <option value="60+">60+</option>
                         </select>
-                        <label for="classchoice"> *Class Select:</label>
+                        <label for="classchoice"> Class Select:</label>
                         <select name="yoga-classes" id="classchoice" required>
                             <option value="12-months">12-months</option>
                             <option value="6-months">6-months</option>
@@ -242,7 +242,7 @@
                     </div>
 
                     <div>
-                        <button class="input-area" type="submit"><strong>Sign Up</strong></button>
+                        <button class="buttons" type="submit"><strong>Sign Up</strong></button>
                     </div>
                 </form>
             </div>
