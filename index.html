@@ -191,9 +191,61 @@
         </div>
     </section>
 
-    <section>
-        contains the sign up section
+    <section id="registration">
+        <div class="registration-container">
+            <div id="left">
+
+                <form action="" method="post">
+                    <div>
+                        <h3>Not yet a member? Sign up!</h3>
+                    </div>
+
+                    <div>
+                        <label for="fullname">Full Name:</label><br>
+                        <input class="input-area" id="fullname" type="text" placeholder="Full Name..." required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label><br>
+                        <input class="input-area" id="email" type="email" name="email"
+                            placeholder="example@email.com,.." required>
+                    </div>
+                    <div>
+                        <label for="password">Password:</label><br>
+                        <input class="input-area" id="password" type="password" name="password" placeholder="********">
+                    </div>
+                    <div>
+                        <label for="phonenumber:">Phone Number:</label><br>
+                        <input class="input-area" id="phonenumber" type="tel" name="phone" placeholder="phone number">
+                    </div>
+                    <div class="select-field">
+                        <label for="age">Age:</label>
+                        <select name="age" id="age" required>
+                            <option value="under-20">Under 20</option>
+                            <option value="20s">20-29</option>
+                            <option value="30s">30-39</option>
+                            <option value="40s">40-49</option>
+                            <option value="50s">50-59</option>
+                            <option value="60+">60+</option>
+                        </select>
+                        <label for="classchoice"> *Class Select:</label>
+                        <select name="yoga-classes" id="classchoice" required>
+                            <option value="12-months">12-months</option>
+                            <option value="6-months">6-months</option>
+                            <option value="3-months">3-months</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <button class="input-area" type="submit"><strong>Sign Up</strong></button>
+                    </div>
+                </form>
+            </div>
+
+            <img id="right" src="assets/images/logo-image.png" alt="">
+        </div>
+
     </section>
+
     <footer>
         second set of socials and contact us page
     </footer>
