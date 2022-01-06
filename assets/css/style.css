@@ -5,9 +5,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-h2, h3 {
+
+h2,
+h3 {
     font-family: 'Lato', sans-serif;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     background: url(../images/hero-image.jpg) no-repeat right top;
@@ -209,71 +212,70 @@ header {
 }
 
 /* pick classes styling start here */
-#classes-gallery {
-    background-color: #bcbcbc;
-}
-
-#row1 {
-    display: flex;
-    overflow-x: scroll;
-}
-
-.col {
-    margin: 20px;
-}
-
-/* styling of the pick a class page starts here */
-#yoga-classes {
+#classes-container {
     background-color: #fff;
-    width: 100%;
-    height: 50vh;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    height: auto;
+    padding: 40px 0;
 }
 
-#row2 {
-    width: 80%;
+#classes-box {
+    width: 90%;
     margin: 0 auto;
 }
 
 .classes-main-header {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
 }
 
 .card {
-    width: 30%;
-    background-color: #5894CC;
-    margin: 5px;
-    float: left;
-}
-
-.classes-header {
-    display: block;
-    background-color: #ff1789;
-    padding: 20px;
+    border-radius: 10px;
     text-align: center;
 }
 
-.card-texts {
-    padding: 20px;
-    height: 20vh;
+.card-left {
+    border-radius: 10px;
+    width: 33%;
+    float: left;
+    border: 4px solid #fff;
+}
+
+.card-right {
+    width: 33%;
+    float: right;
+    border: 4px solid #fff;
+
+}
+
+.card-middle {
+    width: 33%;
+    margin: 0 auto;
+    border: 4px solid #fff;
+}
+
+.card-header {
+    display: block;
+    padding: 20px 0;
+    background-color: #ff1789;
+    border-radius: 5px 5px 0px 0px
+}
+
+.card-text {
+    display: block;
+    padding: 20px 10px;
+    background-color: #5894CC;
 }
 
 .prices {
-    background-color: #fff;
     display: block;
-    padding: 10px;
-    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
 }
 
-.signup-link {
-    margin-top: 20px;
-    background-color: #092642;
+.register-link {
     display: block;
-    text-align: center;
-    padding: 10px;
+    padding: 20px 0;
+    background-color: #092642;
+    border-radius: 0px 0px 5px 5px;
 }
 
 /* registration form styling starts here */
@@ -474,10 +476,6 @@ footer {
         width: 80%;
     }
 
-    #row2 {
-        width: 90%;
-    }
-
     #footer-social-menu,
     .row {
         float: none;
@@ -520,10 +518,6 @@ footer {
 
     #social-menu-box {
         left: 35%;
-    }
-
-    #row2 {
-        width: 100%;
     }
 
     #right {
