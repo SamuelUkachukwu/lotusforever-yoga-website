@@ -220,9 +220,11 @@ header {
 .col {
     margin: 20px;
 }
+
 iframe {
-    border:0;
+    border: 0;
 }
+
 /* pick classes styling start here */
 #classes-container {
     background-color: #fff;
@@ -445,6 +447,25 @@ select {
     padding: 20px;
 }
 
+/* terms and condition */
+#terms-container {
+    padding: 20px 0;
+    background-color: #E3E3E3;
+}
+
+#terms-box {
+    width: 60%;
+    background-color: #fff;
+    height: 50vh;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: scroll;
+}
+
+h4 {
+    padding: 10px 0;
+}
+
 /* footer styling */
 footer {
     width: 100%;
@@ -543,6 +564,9 @@ footer {
     #right {
         display: none;
     }
+    #terms-box {
+        width:90%;
+      }
 }
 
 /* media screen for devices and screen size 600px  */
