@@ -28,7 +28,7 @@ body {
 header {
     width: 100%;
     height: 75px;
-    background-color: #73C2FB;
+    background-color:  #f4bfc7;
     position: fixed;
     top: 0;
     z-index: 333;
@@ -129,13 +129,13 @@ header {
 }
 
 .social-menu a {
-    color: #fff;
+    color: #FF1789;
     font-size: 25px;
     margin-left: 20px;
 }
 
 .social-menu a:hover {
-    color: #FF1789;
+    color:#fff;
 }
 
 /* about us styling */
@@ -415,17 +415,7 @@ button {
     width: 90%;
     height: 55vh;
     margin: 0 auto;
-    /* position: relative; */
 }
-
-/* #contact-logo-image {
-    border: 4px solid #5894CC;
-    position: absolute;
-    z-index: 333;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
 
 .left-box {
     width: 50%;
@@ -516,13 +506,13 @@ h4 {
 /* footer styling */
 footer {
     width: 100%;
-    background-color: #73C2FB;
-    border-top: 4px solid #13538F;
+    background-color:  #f4bfc7;
+    border-top: 4px solid  #ff1789;
 }
 
 .footer-container {
     width: 80%;
-    background-color: #73C2FB;
+    background-color:  #f4bfc7;
     padding: 10px 0px;
     margin: 0 auto;
 }
