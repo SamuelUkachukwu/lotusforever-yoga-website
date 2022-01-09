@@ -11,6 +11,10 @@ h3 {
     font-family: 'Lato', sans-serif;
 }
 
+.clear {
+    clear: both;
+}
+
 .section-header {
     text-align: center;
     padding: 20px;
@@ -32,6 +36,11 @@ header {
     position: fixed;
     top: 0;
     z-index: 333;
+}
+
+/* styling for moveable header */
+.not-fixed {
+    position: relative;
 }
 
 #header-logo {
@@ -299,6 +308,7 @@ iframe {
 
 }
 
+/* codes from [John_C](https://stackoverflow.com/users/1588990/john-c?tab=profile) */
 .tutor-row {
     width: 100%;
     height: 65%;
@@ -308,6 +318,7 @@ iframe {
     overflow-y: hidden;
 }
 
+/* codes from w3school */
 .tutor-row::-webkit-scrollbar {
     display: none;
 }
@@ -561,10 +572,6 @@ footer {
         width: 100%;
         text-align: center;
     }
-
-    /* #contact-logo-image {
-        top: 90%;
-    } */
 }
 
 /* media screen for devices and screen size 768px  */

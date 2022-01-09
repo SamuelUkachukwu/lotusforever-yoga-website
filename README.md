@@ -10,12 +10,14 @@ Users of the website will easily find the information they need to register and 
 We believe your time is precious and how you plan it matters a lot to you so we offer you the option to stream at any convenient time.
 
 
-<img src="" alt="responsive design of the website from ami.responsive.com">
+<img src="assets/images/ami-responsive-screenshot-lotusforever-website.jpg" alt="responsive design of the website from ami.responsive.com">
 
 
 ## Features:
 
 **Navigation:**
+<img src="assets/images/site-navigation-screenshot.jpg" alt="screenshot of navigation page">
+
 1.	The name of the website is displayed on the top left corner this also links users to the top of the page. It is fixed and allows all other content to scroll under it offering the user a more flexible and prominent option to refresh page back to the top as needed.
 2.	To the right is the other navigation links arranged in order: Home, Classes and Sign-Up. This links offer connection to different sections of the page and different pages of the site.
 
@@ -24,21 +26,28 @@ We believe your time is precious and how you plan it matters a lot to you so we 
 4. Underneat the hero text display is the links to the companys social sites. Users can easily access these external site on desktops or mobile to continue their calming yoga journey. 
 
  **About us section:**
-
+<img src="assets/images/about-us-screenshot.jpg" alt="screenshot of about us section">
 1. The About section explains in detail the site goal and what users are to expect while registering on the site.
-
+**Gallery**
+<img src="" alt="">
 2. The mini gallery display scrolls horizontally and offers site user a sneak peak at some select classes.
 
-3. Beneath the mini gallery is the pick a class section. The classes are broken down into months. users can pick class durations that best suits them. Each contains links that will allow the site user to sign up.
+**Class select**
+<img src="assets/images/classes-select-screenshot.jpg" alt=" creenshot of classes select section">
+Beneath the mini gallery is the pick a class section. The classes are broken down into months. users can pick class durations that best suits them. Each contains links that will allow the site user to sign up.
 
 **Tutors:**
+<img src="assets/images/tutors-screenshot.jpg" alt="screenshot of tutors section">
+
 Site users are offered to a portal to view the tutors page (feature not available as at time of write up)
 
-**Sign Up page:**
 
+**Sign Up page:**
+<img src="assets/images/signup-page-screenshot.jpg" alt="screenshot of sign up page">
 The sign up form collects data off users who sign up. Data collected include full name, email, password phone number, age and the class duration of choice. wrong inputs or unfilled segments have been addressed using `required` attributes. 
 
 **Footer:**
+<img src="assets/images/footer-screenshot.jpg" alt="screenshot of site footer section">
 
 1. The footer contains link to the sites contat-us page and terms and condition page. 
 
@@ -47,7 +56,7 @@ The sign up form collects data off users who sign up. Data collected include ful
 3. Contact us link opens a contact query and enquires page where site users can lodge complaints or easily make enquires. It is a simple form with texts areas and brief detail of name and email address. It also contains the company address, phone number and email. 
 
 **Terms and condition:**
-
+<img src="assets/images/terms-condition-screenshot.jpg" alt="screenshot of site terms and condition page">
 The company’s terms and condition page is available through the link at the footer and opens in a new page for ease of read and reference by site users and members signed up.
 
 ## Testing:
@@ -75,7 +84,7 @@ No errors were returned when passing through the official (jigsaw) validator.
 
 I confirmed that the fonts and colors selected are easy to read and assecible by running it through light house in devtools.
 
-<img src="" alt="screenshot of lighthouse test score">
+<img src="assets/images/lighthouse-test-score.jpg" alt="screenshot of lighthouse test score">
 
 
 **Unfixed bugs:** 
