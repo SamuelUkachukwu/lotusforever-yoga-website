@@ -19,7 +19,7 @@ h3 {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: url(../images/test.jpg) no-repeat right top;
+    background: url(../images/hero-image.jpg) no-repeat right top;
     background-size: cover;
     background-attachment: fixed;
     background-color: #bcbcbc;
@@ -28,7 +28,7 @@ body {
 header {
     width: 100%;
     height: 75px;
-    background-color:#73C2FB;
+    background-color: #73C2FB;
     position: fixed;
     top: 0;
     z-index: 333;
@@ -64,7 +64,7 @@ header {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-    color:#092642;
+    color: #092642;
 }
 
 .link-texts:hover {
@@ -217,6 +217,10 @@ header {
     overflow-x: scroll;
 }
 
+#row1::-webkit-scrollbar {
+    display: none;
+}
+
 .col {
     margin: 20px;
 }
@@ -285,33 +289,52 @@ iframe {
 .register-link {
     display: block;
     padding: 20px 0;
-    background-color:#73C2FB;
+    background-color: #73C2FB;
     border-radius: 0px 0px 5px 5px;
 }
+
 /* tutors section styling starts here */
 #tutors-container {
-background-color: #dcdcdc;
+    background-color: #dcdcdc;
 
 }
 
 .tutor-row {
     width: 100%;
-    height: 60vh;
+    height: 65%;
     white-space: nowrap;
     position: relative;
     overflow-x: scroll;
     overflow-y: hidden;
 }
+
+.tutor-row::-webkit-scrollbar {
+    display: none;
+}
+
 .tutor-row .tutors-card {
     float: none;
     display: inline-block;
-    width:335px;
-    height: 50vh;
-    background-color: red;
-    margin: 20px; 
+    width: 335px;
+    height: 335px;
+    background-color: #fff;
+    margin: 20px;
     border-radius: 10px;
-   
+
 }
+
+.tutors-card img {
+    width: 335px;
+    height: 250px;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid #fff;
+}
+
+.tutor-details {
+    display: block;
+    padding: 10px 10px;
+}
+
 /* registration form styling starts here */
 #registration {
     clear: both;
