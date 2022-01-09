@@ -288,7 +288,30 @@ iframe {
     background-color:#73C2FB;
     border-radius: 0px 0px 5px 5px;
 }
+/* tutors section styling starts here */
+#tutors-container {
+background-color: #dcdcdc;
 
+}
+
+.tutor-row {
+    width: 100%;
+    height: 60vh;
+    white-space: nowrap;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.tutor-row .tutors-card {
+    float: none;
+    display: inline-block;
+    width:335px;
+    height: 50vh;
+    background-color: red;
+    margin: 20px; 
+    border-radius: 10px;
+   
+}
 /* registration form styling starts here */
 #registration {
     clear: both;
@@ -369,17 +392,17 @@ button {
     width: 90%;
     height: 55vh;
     margin: 0 auto;
-    position: relative;
+    /* position: relative; */
 }
 
-#contact-logo-image {
+/* #contact-logo-image {
     border: 4px solid #5894CC;
     position: absolute;
     z-index: 333;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
 
 .left-box {
     width: 50%;
@@ -475,7 +498,7 @@ footer {
 }
 
 .footer-container {
-    width: 70%;
+    width: 80%;
     background-color: #73C2FB;
     padding: 10px 0px;
     margin: 0 auto;
@@ -526,9 +549,9 @@ footer {
         text-align: center;
     }
 
-    #contact-logo-image {
+    /* #contact-logo-image {
         top: 90%;
-    }
+    } */
 }
 
 /* media screen for devices and screen size 768px  */
