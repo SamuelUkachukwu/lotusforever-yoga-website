@@ -1,108 +1,132 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome SamuelUkachukwu,
+# Readme file for LOTUSFOREVER yoga website
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Lotusforever Yoga 
+The lotusforever yoga website is a website for anyone aged 15 and above that finds the practice of yoga relaxing and calming. The website offers easy streaming and couching of yoga positions that clients can stream directly to the comfort of their homes without the hasles of meeting up at venues 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Users of the website will easily find the information they need to register and access our ever growing libray of online yoga practice with first class facilitators guiding them tru each rewardsing practice of yoga. 
 
-## Gitpod Reminders
+We believe your time is precious and how you plan it matters a lot to you so we offer you the option to stream at any convenient time.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+<img src="" alt="responsive design of the website from ami.responsive.com">
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+## Features:
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+**Navigation:**
+1.	The name of the website is displayed on the top left corner this also links users to the top of the page. It is fixed and allows all other content to scroll under it offering the user a more flexible and prominent option to refresh page back to the top as needed.
+2.	To the right is the other navigation links arranged in order: Home, Classes and Sign-Up. This links offer connection to different sections of the page and different pages of the site.
 
-A blue button should appear to click: _Make Public_,
+3. The hero image displays a set of motivational quotes to inspire and motivate users.   
 
-Another blue button should appear to click: _Open Browser_.
+4. Underneat the hero text display is the links to the companys social sites. Users can easily access these external site on desktops or mobile to continue their calming yoga journey. 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+ **About us section:**
 
-To log into the Heroku toolbelt CLI:
+1. The About section explains in detail the site goal and what users are to expect while registering on the site.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+2. The mini gallery display scrolls horizontally and offers site user a sneak peak at some select classes.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+3. Beneath the mini gallery is the pick a class section. The classes are broken down into months. users can pick class durations that best suits them. Each contains links that will allow the site user to sign up.
 
-------
+**Tutors:**
+Site users are offered to a portal to view the tutors page (feature not available as at time of write up)
 
-## Release History
+**Sign Up page:**
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+The sign up form collects data off users who sign up. Data collected include full name, email, password phone number, age and the class duration of choice. wrong inputs or unfilled segments have been addressed using `required` attributes. 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+**Footer:**
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+1. The footer contains link to the sites contat-us page and terms and condition page. 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+2. It also contains another set of the sites social links. This is convinently placed to allow users the ease of not scrolling back up to the ones on top.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+3. Contact us link opens a contact query and enquires page where site users can lodge complaints or easily make enquires. It is a simple form with texts areas and brief detail of name and email address. It also contains the company address, phone number and email. 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+**Terms and condition:**
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+The company’s terms and condition page is available through the link at the footer and opens in a new page for ease of read and reference by site users and members signed up.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Testing:
+I tested that the page works in different browsers chrome, moxila firefox and  Microsoft edge 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+Responsiveness test on each web browser was done using the developer device tool bar.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+I have confirmed that the form works well and required entry in each field will only accept designated inputs.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+I have confirmed that all links work perfectly and all navigation elements are easy to read and understand.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Bugs: 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Validator Testing 
+**HTML**
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+No errors were returned when passing through the official W3C validator.
 
-------
+**CSS**
 
-## FAQ about the uptime script
+No errors were returned when passing through the official (jigsaw) validator.
 
-**Why have you added this script?**
+**Accessibility**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+I confirmed that the fonts and colors selected are easy to read and assecible by running it through light house in devtools.
 
-**How will this affect me?**
+<img src="" alt="screenshot of lighthouse test score">
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+**Unfixed bugs:** 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+none
 
-**So….?**
+## Deployment 
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+The site was deployed to github 
+1.	In the github repository click on the setting tab 
+2.	Navigate to the github pages section and click on the dedicated pages tab
+3.	On the source tab select main and save
+4.	Once the branch main is saved the page displays a link to the website.
+5.	Refresh the browser and a `Your site is published at` display with the site link appears. 
+The live site can be found here  [Lotusforever](https://samuelukachukwu.github.io/lotusforever-yoga-website/)
 
-**Can I opt out?**
+## Credits
+**Yoga youtube site:**  
+[Boho Beautiful Yoga](https://www.youtube.com/channel/UCWN2FPlvg9r-LnUyepH9IaQ) 
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+**Image used in website:**
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+1.  [SHVETS production](https://www.pexels.com/@shvets-production)
+2.	[Alexy Almond](https://www.pexels.com/@alexy-almond)
+3.	[KoolShooters](https://www.pexels.com/@kool-shooters )
+4.	[PNW Production](https://www.pexels.com/@pnw-prod)
+5.	[Miriam Alonso](https://www.pexels.com/@miriam-alonso)
+6.	[Spencer Selover](https://www.pexels.com/@spencer-selover-142259)
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
 
-Happy coding!
+Site terms and conditions generated using: [Termly](https://app.termly.io/)
+**inserted codes:**
+
+[Code Institute](https://codeinstitute.net/)
+
+[W3School](https://www.w3schools.com/)
+
+ [John_C](https://stackoverflow.com/users/1588990/john-c?tab=profile) for codes in horizontal scrolling div.
+
+[Web-tiki](https://stackoverflow.com/users/1811992/web-tiki) for codes in div height not expanding.
+
+
+
+
+
+
+
+
+
+
+
+

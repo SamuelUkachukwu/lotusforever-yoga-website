@@ -28,7 +28,7 @@ body {
 header {
     width: 100%;
     height: 75px;
-    background-color:  #f4bfc7;
+    background-color: #f4bfc7;
     position: fixed;
     top: 0;
     z-index: 333;
@@ -84,7 +84,7 @@ header {
 
 #menu a {
     text-decoration: none;
-    color: #000;
+    color: #092642;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     line-height: 75px;
@@ -135,7 +135,7 @@ header {
 }
 
 .social-menu a:hover {
-    color:#fff;
+    color: #fff;
 }
 
 /* about us styling */
@@ -506,13 +506,13 @@ h4 {
 /* footer styling */
 footer {
     width: 100%;
-    background-color:  #f4bfc7;
-    border-top: 4px solid  #ff1789;
+    background-color: #f4bfc7;
+    border-top: 4px solid #ff1789;
 }
 
 .footer-container {
     width: 80%;
-    background-color:  #f4bfc7;
+    background-color: #f4bfc7;
     padding: 10px 0px;
     margin: 0 auto;
 }
