@@ -1,8 +1,9 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-# Readme file for LOTUSFOREVER yoga website
+# README FILE FOR LOTUSFOREVER YOGA WEBSITE
 
-Lotusforever Yoga 
+## Lotusforever Yoga 
+
 The lotusforever yoga website is a website for anyone aged 15 and above that finds the practice of yoga relaxing and calming. The website offers easy streaming and couching of yoga positions that clients can stream directly to the comfort of their homes without the hasles of meeting up at venues 
 
 Users of the website will easily find the information they need to register and access our ever growing libray of online yoga practice with first class facilitators guiding them tru each rewardsing practice of yoga. 
@@ -59,8 +60,14 @@ The sign up form collects data off users who sign up. Data collected include ful
 <img src="assets/images/terms-condition-screenshot.jpg" alt="screenshot of site terms and condition page">
 The company’s terms and condition page is available through the link at the footer and opens in a new page for ease of read and reference by site users and members signed up.
 
+## Features Left to Implement
+the following feature are missing from the site and i would love to implement them in the future.
+1. tutor page a link from the tutor tab to a separate page where details and classes schedule of the tutor is displayed.
+2. client schedular a calendar-based app that will help clients schedule their practice time to suit their day to day activities
+3. social page where users can meet up and interact amongst themselves and the tutors.
+
 ## Testing:
-I tested that the page works in different browsers chrome, moxila firefox and  Microsoft edge 
+I tested that the page works in different browsers Chrome, Mozilla Firefox and Microsoft edge 
 
 Responsiveness test on each web browser was done using the developer device tool bar.
 
@@ -99,9 +106,13 @@ The site was deployed to github
 3.	On the source tab select main and save
 4.	Once the branch main is saved the page displays a link to the website.
 5.	Refresh the browser and a `Your site is published at` display with the site link appears. 
+
 The live site can be found here  [Lotusforever](https://samuelukachukwu.github.io/lotusforever-yoga-website/)
 
 ## Credits
+
+### Media
+
 **Yoga youtube site:**  
 [Boho Beautiful Yoga](https://www.youtube.com/channel/UCWN2FPlvg9r-LnUyepH9IaQ) 
 
@@ -115,12 +126,14 @@ The live site can be found here  [Lotusforever](https://samuelukachukwu.github.i
 6.	[Spencer Selover](https://www.pexels.com/@spencer-selover-142259)
 
 
-
+### Content
 
 Site terms and conditions generated using: [Termly](https://app.termly.io/)
-**inserted codes:**
 
-[Code Institute](https://codeinstitute.net/)
+text contents for mini yoga practice gallery are from individual Youtube Videos displayed by [Boho Beautiful Yoga](https://www.youtube.com/channel/UCWN2FPlvg9r-LnUyepH9IaQ) 
+
+
+### Inserted Codes
 
 [W3School](https://www.w3schools.com/)
 
