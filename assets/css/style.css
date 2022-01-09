@@ -19,7 +19,7 @@ h3 {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: url(../images/hero-image.jpg) no-repeat right top;
+    background: url(../images/test.jpg) no-repeat right top;
     background-size: cover;
     background-attachment: fixed;
     background-color: #bcbcbc;
@@ -28,7 +28,7 @@ body {
 header {
     width: 100%;
     height: 75px;
-    background-color: #1A71C1;
+    background-color:#73C2FB;
     position: fixed;
     top: 0;
     z-index: 333;
@@ -64,7 +64,7 @@ header {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-    color: #fff;
+    color:#092642;
 }
 
 .link-texts:hover {
@@ -84,7 +84,7 @@ header {
 
 #menu a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     line-height: 75px;
@@ -107,7 +107,7 @@ header {
     color: #fff;
     clear: both;
     text-align: center;
-    background-color: rgba(255, 23, 137, 0.3);
+    background-color: rgba(255, 23, 137, .5);
     padding: 20px;
     border-radius: 5px;
     width: 80%;
@@ -140,14 +140,14 @@ header {
 
 /* about us styling */
 #about-us {
-    background-color: #bcbcbc;
+    background-color: #dcdcdc;
     padding: 20px 0px 20px 0px;
     width: 100%;
     height: 50%;
 }
 
 #about-us-content {
-    width: 95%;
+    width: 99%;
     padding: 20px;
     margin: 0 auto;
     background-color: #fff;
@@ -209,7 +209,7 @@ header {
 
 /* gallery styling starts here */
 #classes-gallery {
-    background-color: #bcbcbc;
+    background-color: #dcdcdc;
 }
 
 #row1 {
@@ -285,7 +285,7 @@ iframe {
 .register-link {
     display: block;
     padding: 20px 0;
-    background-color: #092642;
+    background-color:#73C2FB;
     border-radius: 0px 0px 5px 5px;
 }
 
@@ -293,9 +293,10 @@ iframe {
 #registration {
     clear: both;
     width: 100%;
-    background-color: #bcbcbc;
+    background-color: #FFCDD0;
+    ;
     margin: 0px;
-    padding: 40px 0px;
+    padding: 10px 0px;
 }
 
 .registration-container {
@@ -304,7 +305,6 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 0px;
 }
 
 #left {
@@ -321,9 +321,10 @@ iframe {
 
 #right {
     width: 328px;
-    height: 440px;
+    height: 420px;
     background-color: #8A6E70;
     margin-left: -20px;
+
     border-radius: 10px;
     box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -469,19 +470,20 @@ h4 {
 /* footer styling */
 footer {
     width: 100%;
-    background-color: #1A71C1;
+    background-color: #73C2FB;
     border-top: 4px solid #13538F;
 }
 
 .footer-container {
     width: 70%;
-    padding: 30px 0px;
+    background-color: #73C2FB;
+    padding: 10px 0px;
     margin: 0 auto;
 }
 
 .row {
     float: left;
-    line-height: 70px;
+    line-height: 77px;
     margin-right: 30px;
 }
 
@@ -535,15 +537,17 @@ footer {
         font-size: 155%;
         padding-top: 10px;
         margin: 0 auto;
-      }
-    #header-logo, #menu {
+    }
+
+    #header-logo,
+    #menu {
         float: none;
         display: inline-block;
-        width:100%;
-        line-height:50px ;
+        width: 100%;
+        line-height: 50px;
         text-align: center;
-      }
- 
+    }
+
     header {
         height: 115px;
     }
@@ -562,6 +566,7 @@ footer {
     .right-about {
         clear: both;
         width: 100%;
+        height: 40vh;
     }
 
     body {
@@ -581,14 +586,16 @@ footer {
     #right {
         display: none;
     }
+
     #terms-box {
-        width:90%;
-      }
+        width: 90%;
+    }
 }
 
 /* media screen for devices and screen size 600px  */
 @media screen and (max-width: 600px) {
     #social-menu-box {
+        top: 85%;
         left: 20%;
     }
 

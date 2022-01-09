@@ -28,64 +28,59 @@
         </nav>
     </header>
 
-    <section id="contact-us">
-        <div id="contact-us-container">
+    <section id="registration">
+        <div class="registration-container">
+            <div id="left">
 
-            <!-- <img id="contact-logo-image" class="company-image-logo" src="assets/images/icon.png" alt="company logo"> -->
-            <div>
-                <h3 class="section-header">If you have any Queries or Enquiries, please fill out the form</h3>
-            </div>
-            <form class="" action="#" method="post">
-                <div class="left-box">
-                    <textarea id="text-here" name="name" rows="8" placeholder="Queries and Enquiries..."></textarea>
-                </div>
-                <div class="right-box">
-                    <div class="detail-field">
-                        <div>
-                            <label for="fullname">Full Name:</label><br>
-                            <input id="fullname" class="input-area" type="text" name="fullname"
-                                placeholder="Full Name..." required>
-                        </div>
-                        <div>
-                            <label for="email">Email:</label><br>
-                            <input id="email" class="input-area" type="email" name="email"
-                                placeholder="example@email.com..." required>
-                        </div>
-                        <div>
-                            <button class="buttons" type="submit"><strong>Submit</strong></button>
-                        </div>
+                <form action="#" method="post">
+                    <div>
+                        <h3>Not yet a member? Sign up!</h3>
                     </div>
 
-                </div>
-            </form>
-            <br style="clear: both" />
+                    <div>
+                        <label for="fullname">Full Name:</label><br>
+                        <input class="input-area" id="fullname" type="text" placeholder="Full Name..." required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label><br>
+                        <input class="input-area" id="email" type="email" name="email"
+                            placeholder="example@email.com,.." required>
+                    </div>
+                    <div>
+                        <label for="password">Password:</label><br>
+                        <input class="input-area" id="password" type="password" name="password" placeholder="********">
+                    </div>
+                    <div>
+                        <label for="phonenumber">Phone Number:</label><br>
+                        <input class="input-area" id="phonenumber" type="tel" name="phone" placeholder="phone number">
+                    </div>
+                    <div class="select-field">
+                        <label for="age">Age:</label>
+                        <select id="age" name="age">
+                            <option value="15+">15-24</option>
+                            <option value="20+">25-34</option>
+                            <option value="30+">35-44</option>
+                            <option value="40+">45-54</option>
+                            <option value="50+">55+</option>
+                        </select>
+                        <label for="classchoice"> Class Select:</label>
+                        <select id="classchoice" name="yoga-classes">
+                            <option value="12">12-months</option>
+                            <option value="6">6-months</option>
+                            <option value="3">3-months</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <button class="buttons" type="submit"><strong>Sign Up</strong></button>
+                    </div>
+                </form>
+            </div>
+
+            <img id="right" src="assets/images/logo-image.jpg" alt="">
         </div>
-        <div id="address">
-            <div class="tabs">
-                <h3>Address:</h3>
-                <hr>
-                <p>Lotusforever <br>
-                    56 Summer Hill <br>
-                    Ballinasloe <br>
-                    Co Galway</p>
-            </div>
-            <div class="tabs">
-                <h3>Phone No:</h3>
-                <hr>
-                <p>0831900005</p>
-            </div>
-            <div class="tabs">
-                <h3>Email address:</h3>
-                <hr>
-                <p>email@lotusforever.com</p>
-            </div>
-        </div>
+
     </section>
-
-
-
-
-
     <footer>
         <div class="footer-container">
             <div class="row">
