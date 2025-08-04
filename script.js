@@ -1,5 +1,6 @@
 const menuButton = document.getElementById('menu');
 const mobileNav = document.getElementById('mobile-nav');
+const mobileNavLinks = document.querySelectorAll('.mobile-links a');
 
 function stopScrolling(e) {
     e.preventDefault();
@@ -24,6 +25,13 @@ menuButton.addEventListener('click', function () {
     } else {
         enableScroll();
     }
+});
+
+mobileNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        mobileNav.classList.remove('active');
+        menuButton.classList.remove('open');
+    });
 });
 
 window.addEventListener('resize', function () {
