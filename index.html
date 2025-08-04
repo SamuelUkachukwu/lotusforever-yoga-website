@@ -9,278 +9,512 @@
     <meta name="keywords" content="yoga, fitness, meditation, health and wellbing, peace, mental health">
     <meta name="author" content="Samuel Ukachukwu">
     <link rel="icon" href="assets/images/icon.png">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <title>Lotusforever</title>
 </head>
 
 <body>
-    <header>
-        <a href="index.html">
-            <h1 id="header-logo" class="logo">Lotusforever <span id="logo-font"><i class="fas fa-spa"></i></span></h1>
-        </a>
-        <nav>
-            <ul id="menu">
-                <li><a href="signup.html" aria-label="go to sign up section">Sign Up</a></li>
-                <li><a href="#classes-container" aria-label="go to pick a suitable class section">Classes</a></li>
-                <li><a href="index.html" class="active" aria-label="go to top of page">Home</a></li>
+
+    <header class="header">
+        <nav class="navbar">
+            <a class="logo" href="/"><span>Lotusforever</span><i class="fas fa-spa"></i></a>
+            <ul>
+                <li><a href="#yoga-classes">Classes</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#tutors">Podcast</a></li>
+                <li><a href="">FAQ</a></li>
             </ul>
+            <a class="login" href="sign_up/">sign-up/login</a>
+
+            <!-- hamburger menu -->
+            <span class='menu' id="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
         </nav>
+
     </header>
-    <!-- hero section (hero-container) is fixed and contents scroll over it under the nav bar -->
-    <section id="hero-container">
-        <div id="hero-cover-text-box">
-            <h2>"There is always room for change, but you have to be open to that change.”<br>
-                <span>— Kathryn Budig</span></h2>
-        </div>
-        <div id="social-menu-box">
-            <ul class="social-menu">
-                <li><a href="https://twitter.com/?lang=en" target="_blank" rel="noopener"
-                        aria-label="visit our twitter page (opens in a new tab)"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
-                        aria-label="visit our instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
-                        aria-label="visit our facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
-                </li>
-                <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
-                        aria-label="visit our youtube page (opens in a new tab)"><i class="fab fa-youtube"></i></a>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <!-- about us section -->
-    <section Id="about-us">
-        <div id="about-us-content">
-            <div class="left-about">
-                <h2 class="logo" id="about-logo">Lotusforever</h2>
-            </div>
-            <div class="right-about">
-                <div id="about-text-container">
-                    <p class="about-text"><span class="logo">Lotusforever</span> &reg; is an online yoga class streamed
-                        right to you at the comfort of
-                        your home with teachers who excel in yoga technique guidance.</p>
-                    <p class="about-text">We focus on key elements in yoga practice with a more centred approach in tune
-                        with the mind and body to create balance and calm thru relaxing yoga practices.</p>
-                </div>
-            </div>
-            <div class="middle-about">
-                <img id="about-image" class="company-image-logo" src="assets/images/icon.png"
-                    alt="company logo lady in lotus position">
-            </div>
-        </div>
-    </section>
-
-    <!-- this is the classes/gallery section -->
-    <section id="classes-gallery">
-        <div class="section-header">
-            <h3>Have a feel of calm and balance with select videos from our ever-increasing library</h3>
-        </div>
-        <div id="row1">
-            <article class="col">
-                <div class="frame">
-                    <iframe width="330" height="215" src="https://www.youtube.com/embed/NKiGZktresA"
-                        title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-                <div>
-                    <h3>Total Body Yoga Flow | Morning Yoga Class: Awaken</h3>
-                    <p class="about-text">This 20 minute yoga class for everyone is the perfect way to awaken the body
-                        in the morning or any time of the day when you feel like you need to increase your flow of
-                        energy. An online yoga practice that will allow you to strengthen the body and increase
-                        flexibility from the comfort of your own home</p>
-                </div>
-                <a class="link-texts" href="https://www.youtube.com/watch?v=NKiGZktresA&t=958s" target="_blank"
-                    rel="noopener" aria-label="visit our youtube page (opens in a new tab)">read more...</a>
-            </article>
-            <article class="col">
-                <div class="frame">
-                    <iframe width="330" height="215" src="https://www.youtube.com/embed/-fac_iJ8Nw8"
-                        title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-                <div>
-                    <h3>Yin Yoga Fusion ♥ Best Yoga For Flexibility</h3>
-                    <p class="about-text">This Yin Yoga Flow class is going to give you that relaxing deep stretch your
-                        body has been craving for. Focusing on fusing Vinyasa based flow (Yang) with slow and tension
-                        releasing postures (Yin), this class is great to do in morning as well as anytime during the day
-                        as we focus on first warming up the body with a flow, and then taking it into a deep release by
-                        holding each Yin pose for 2 minutes. </p>
-                    <a class="link-texts" href="https://www.youtube.com/watch?v=-fac_iJ8Nw8" target="_blank"
-                        rel="noopener" aria-label="visit our youtube page (opens in a new tab)">read more...</a>
-                </div>
-            </article>
-            <article class="col">
-                <div class="frame">
-                    <iframe width="330" height="215" src="https://www.youtube.com/embed/LM-E6HeuG3I"
-                        title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-                <div>
-                    <h3>Blissful Yoga Flow ♥ One Yoga Class To Rule Them All</h3>
-                    <p class="about-text">This 20 minute energizing yoga flow is the perfect way to start or end your
-                        day with. With a gentle increase of movement and yoga postures to wake up the muscles, you will
-                        begin to feel your body become more energized, and flexible. This class is a beautiful way to
-                        start your morning with a beautiful easy yoga class for everyone that allows you to set an
-                        intention for connecting your breath with movement. </p>
-                    <a class="link-texts" href="https://www.youtube.com/watch?v=LM-E6HeuG3I&t=133s" target="_blank"
-                        rel="noopener" aria-label="visit our youtube page (opens in a new tab)">read more...</a>
-                </div>
-            </article>
-            <article class="col">
-                <div class="frame">
-                    <iframe width="330" height="215" src="https://www.youtube.com/embed/KDH9yvnYT0o"
-                        title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-                <div>
-                    <h3>Relaxing Yoga For Peace ♥ Nama'stay In Bed</h3>
-                    <p class="about-text">This 10 min peaceful yoga sequence is the perfect way to start or end your
-                        day. Simple slow postures will allow your body and mind to find true peace and calmness. I want
-                        you to take your time with each pose and focus on deepening your breath. Going deeper into each
-                        posture with every long exhale you make.
-                    </p>
-                    <a class="link-texts" href="https://www.youtube.com/watch?v=KDH9yvnYT0o" target="_blank"
-                        rel="noopener" aria-label="visit our youtube page (opens in a new tab)">read more...</a>
-                </div>
-            </article>
-        </div>
-    </section>
-
-
-    <!-- section for pick a clases start here -->
-    <section id="classes-container">
-        <div class="section-header">
-            <h3>Sign Up Today and enjoy a 10% discount in any of our flexible classes.</h3>
-        </div>
-        <div class="section-header">
-            <p>First Timmer’s get a free <span class="logo">Lotusforever</span> &reg; Yoga Mat!</p>
-        </div>
-        <div id="classes-box">
-            <div class="card-left card">
-                <div class="card-header">
-                    <h3>12-months</h3>
-                </div>
-                <div class="card-text">
-                    <p>Unlimited access to all Classes and Streaming. Save big with our 10% discount</p>
-                </div>
-                <div class="prices">
-                    <p>Was &#x20AC; <del>300</del> Now &#x20AC; 270</p>
-                </div>
-                <div>
-                    <a class="register-link link-texts" href="signup.html">register!</a>
-                </div>
-            </div>
-            <div class="card-right card">
-                <div class="card-header">
-                    <h3>3-months</h3>
-                </div>
-                <div class="card-text">
-                    <p>Unlimited access to all Classes and Streaming. Save big with our 10% discount</p>
-                </div>
-                <div class="prices">
-                    <p>Was &#x20AC; <del>75</del> Now &#x20AC; 67.5</p>
-                </div>
-                <div>
-                    <a class="register-link link-texts" href="signup.html">register!</a>
-                </div>
-            </div>
-            <div class="card-middle card">
-                <div class="card-header">
-                    <h3>6-months</h3>
-                </div>
-                <div class="card-text">
-                    <p>Unlimited access to all Classes and Streaming. Save big with our 10% discount</p>
-                </div>
-                <div class="prices">
-                    <p>Was &#x20AC; <del>150</del> Now &#x20AC; 135</p>
-                </div>
-                <div>
-                    <a class="register-link link-texts" href="signup.html">register!</a>
-                </div>
-            </div>
-            <br class="clear"/>
-        </div>
-    </section>
-
-    <!-- teachers section starts here -->
-    <section id="tutors-container">
-        <div class="section-header">
-            <h3>Committed to a wholesome and balanced practice</h3>
-        </div>
-        <div class="section-header">
-            <p>Our tutors combine the perfect recipe of knowledge and effective tutor support to help you balance
-                mentally physically.
-            </p>
-        </div>
-        <div class="tutor-row">
-            <div class="tutors-card">
-                <img src="assets/images/tutor1.jpg" alt="yoga tutor">
-                <div class="tutor-details">
-                    <h4>Anna Malli</h4>
-                    <p>Iyengar Yoga</p>
-                </div>
-            </div>
-            <div class="tutors-card">
-                <img src="assets/images/tutor2.jpg" alt="yoga tutor">
-                <div class="tutor-details">
-                    <h4>Fulano de Tal</h4>
-                    <p>Vinyasa Yoga</p>
-                </div>
-            </div>
-            <div class="tutors-card">
-                <img src="assets/images/tutor3.jpg" alt="yoga tutor">
-                <div class="tutor-details">
-                    <h4>Jane Smith</h4>
-                    <p>Ashtanga Yoga</p>
-                </div>
-            </div>
-            <div class="tutors-card">
-                <img src="assets/images/tutor4.jpg" alt="yoga tutor">
-                <div class="tutor-details">
-                    <h4>Kari Nordmann</h4>
-                    <p>Bikram Yoga</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- footer section -->
-    <footer>
-        <div class="footer-container">
-            <div class="row">
-                <p>copyright &#169; <span class="logo">Lotusforever</span> &reg; 2022</p>
-            </div>
-            <div class="row">
-                <h3><a class="link-texts" href="contact.html">Contact Us</a></h3>
-            </div>
-            <div class="row">
-                <h3><a class="link-texts" href="terms.html">terms &#38; condition </a></h3>
-            </div>
-            <div id="footer-social-menu" class="row">
-                <ul class="social-menu">
-                    <li><a href="https://twitter.com/?lang=en" target="_blank" rel="noopener"
-                            aria-label="visit our twitter page (opens in a new tab)"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
-                            aria-label="visit our instagram page (opens in a new tab)"><i
-                                class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
-                            aria-label="visit our facebook page (opens in a new tab)"><i
-                                class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
-                            aria-label="visit our youtube page (opens in a new tab)"><i class="fab fa-youtube"></i></a>
+    <!-- hamburger show  -->
+    <!-- on click show mobile nav full screen  that slides in from top  -->
+    <div id="mobile-nav">
+        <div class="mobile-nav-bg">
+            <div>
+                <ul class="mobile-links">
+                    <li><a href="#yoga-classes">Classes</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#tutors">Podcast</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="sign_up/">Sign Up/Login</a></li>
                 </ul>
+                <div class="social-icons mobile-icons" style="padding-top: 6rem;">
+                    <a class="text-decoration-none me-3" href="https://www.facebook.com" target="_blank"
+                        aria-label="Facebook" title="Facebook">
+                        <i class="text-cl-socials fs-1 fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                    <a class="text-decoration-none me-3" href="https://www.linkedin.com" target="_blank"
+                        aria-label="LinkedIn" title="LinkedIn">
+                        <i class="text-cl-socials fs-1 fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                    <a class="text-decoration-none" href="https://www.instagram.com" target="_blank"
+                        aria-label="Instagram" title="Instagram">
+                        <i class="text-cl-socials fs-1 fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
-            <br class="clear"/>
         </div>
+    </div>
 
+    <main class="wrapper">
+        <div class="hero">
+            <h1>Lotusforever</h1>
+        </div>
+        <section class="hero-container">
+            <div class="hero-animation">
+                <div class="hero-blinds"></div>
+                <div class="hero-blinds"></div>
+                <div class="hero-blinds"></div>
+                <div class="hero-blinds"></div>
+            </div>
+            <div class="hero-content">
+                <div class="box box1">
+                    <h1 class="box1-header">Balance, Strength, Peace</h1>
+
+                    <h2 class="box1-quote">"There is always room for change, but you have to be open to that change.”
+                        <br>
+                        <span>—
+                            Kathryn Budig</span>
+                    </h2>
+
+                    <div class="box-cta">
+                        <button class="btn">Get Started</button>
+                        <button class="btn"> <i class="fab fa-facebook"></i>&nbsp;&nbsp;Join Us On Facebook</button>
+                    </div>
+                    <div class="box-client">
+                        <p>Total members</p>
+                        <div class="box-client-img">
+                            <img src="./assets/images/team1.JPG" alt="">
+                            <img src="./assets/images/team2.JPG" alt="">
+                            <img src="./assets/images/team3.JPG" alt="">
+                            <span>1.2k</span>
+                        </div>
+                    </div>
+                </div>
+
+                <video autoplay muted loop playsinline style="border-radius: 10px;" poster="./assets/images/yoga.jpeg">
+                    <source src="./assets/images/yoga.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <section id="yoga-classes" class="yoga-classes">
+            <div class="container">
+                <div class="yoga-class-heading">
+                    <h2>Explore Our Yoga Classes</h2>
+                    <p>Find your flow with weekly sessions tailored to your body and breath.</p>
+                </div>
+                <div class="cards-container">
+                    <div class="yoga-card">
+                        <img src="./assets/images/Hatha_Yoga.webp" alt="Hatha Yoga Class">
+                        <div class="card-content">
+                            <h3>Hatha Yoga</h3>
+                            <p>A grounding class for strength, breath, and balance.</p>
+                            <div class="schedule">
+                                <div class="schedule-row">
+                                    <span>Monday</span>
+                                    <span>Morning Flow - 8:00 AM</span>
+                                </div>
+                                <div class="schedule-row">
+                                    <span>Wednesday</span>
+                                    <span>Midweek Reset - 6:00 PM</span>
+                                </div>
+                                <div class="schedule-row">
+                                    <span>Saturday</span>
+                                    <span>Weekend Detox - 9:30 AM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="yoga-card">
+                        <img src="./assets/images/Vinyasa_Yoga.webp" alt="Vinyasa Yoga">
+                        <div class="card-content">
+                            <h3>Vinyasa Yoga</h3>
+                            <p>Dynamic flow to energize and align the body.</p>
+                            <div class="schedule">
+                                <div class="schedule-row"><span>Tuesday</span><span>Sunrise Flow - 7:00 AM</span></div>
+                                <div class="schedule-row"><span>Thursday</span><span>Evening Vibe - 6:30 PM</span></div>
+                                <div class="schedule-row"><span>Sunday</span><span>Soft Flow - 9:00 AM</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="yoga-card">
+                        <img src="./assets/images/Yin_Yoga.webp" alt="Yin Yoga">
+                        <div class="card-content">
+                            <h3>Yin Yoga</h3>
+                            <p>Deep stretching for fascia and stillness.</p>
+                            <div class="schedule">
+                                <div class="schedule-row"><span>Monday</span><span>Evening Stretch - 7:30 PM</span>
+                                </div>
+                                <div class="schedule-row"><span>Thursday</span><span>Quiet Energy - 8:00 PM</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="yoga-card">
+                        <img src="./assets/images/Ashtanga_Yoga.webp" alt="Ashtanga Yoga">
+                        <div class="card-content">
+                            <h3>Ashtanga Yoga</h3>
+                            <p>Strong, structured sequences for discipline.</p>
+                            <div class="schedule">
+                                <div class="schedule-row"><span>Tuesday</span><span>Primary Series - 6:00 PM</span>
+                                </div>
+                                <div class="schedule-row"><span>Friday</span><span>Mysore Style - 7:00 AM</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="yoga-card">
+                        <img src="/assets/images/Restorative_Yoga.webp" alt="Restorative Yoga">
+                        <div class="card-content">
+                            <h3>Restorative Yoga</h3>
+                            <p>Gentle support for deep rest and healing.</p>
+                            <div class="schedule">
+                                <div class="schedule-row"><span>Wednesday</span><span>Unwind - 8:30 PM</span></div>
+                                <div class="schedule-row"><span>Sunday</span><span>Candlelight Calm - 6:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="yoga-card">
+                        <img src="./assets/images/Kundalini_Yoga.webp" alt="Kundalini Yoga">
+                        <div class="card-content">
+                            <h3>Kundalini Yoga</h3>
+                            <p>Awaken inner energy with breath & movement.</p>
+                            <div class="schedule">
+                                <div class="schedule-row"><span>Thursday</span><span>Energy Rise - 6:00 AM</span></div>
+                                <div class="schedule-row"><span>Saturday</span><span>Spiritual Awakening - 10:00
+                                        AM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="yoga-card">
+                        <img src="./assets/images/Power_Yoga.webp" alt="Power Yoga">
+                        <div class="card-content">
+                            <h3>Power Yoga</h3>
+                            <p>High-intensity practice to build strength.</p>
+                            <div class="schedule">
+                                <div class="schedule-row"><span>Monday</span><span>Core Burn - 6:30 PM</span></div>
+                                <div class="schedule-row"><span>Friday</span><span>Power Up - 7:30 AM</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="yoga-card">
+                        <img src="./assets/images/Prenatal_Yoga.webp" alt="Prenatal Yoga">
+                        <div class="card-content">
+                            <h3>Prenatal Yoga</h3>
+                            <p>Gentle flow tailored for expecting mothers.</p>
+                            <div class="schedule">
+                                <div class="schedule-row"><span>Tuesday</span><span>Bump & Breathe - 11:00 AM</span>
+                                </div>
+                                <div class="schedule-row"><span>Friday</span><span>Stretch & Support - 5:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="yoga-card">
+                        <img src="./assets/images/Guided_Meditation.webp" alt="Meditation Class">
+                        <div class="card-content">
+                            <h3>Guided Meditation</h3>
+                            <p>Mindfulness sessions for inner clarity.</p>
+                            <div class="schedule">
+                                <div class="schedule-row"><span>Monday</span><span>Morning Mind - 7:30 AM</span></div>
+                                <div class="schedule-row"><span>Friday</span><span>Evening Calm - 8:00 PM</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="yoga-card">
+                        <img src="./assets/images/Yoga_Nidra.webp" alt="Yoga Nidra">
+                        <div class="card-content">
+                            <h3>Yoga Nidra</h3>
+                            <p>Guided yogic sleep for total relaxation.</p>
+                            <div class="schedule">
+                                <div class="schedule-row"><span>Thursday</span><span>Deep Rest - 8:00 PM</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="yoga-card">
+                        <img src="./assets/images/Chair_Yoga.webp" alt="Chair Yoga">
+                        <div class="card-content">
+                            <h3>Chair Yoga</h3>
+                            <p>Accessible yoga for all bodies & mobility.</p>
+                            <div class="schedule">
+                                <div class="schedule-row"><span>Monday</span><span>Gentle Seated - 10:00 AM</span></div>
+                                <div class="schedule-row"><span>Thursday</span><span>Balance Basics - 2:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="yoga-card">
+                        <img src="./assets/images/Hot_Yoga.png" alt="Hot Yoga">
+                        <div class="card-content">
+                            <h3>Hot Yoga</h3>
+                            <p>Detox and energize in heated flow sessions.</p>
+                            <div class="schedule">
+                                <div class="schedule-row"><span>Tuesday</span><span>Hot Core - 5:30 PM</span></div>
+                                <div class="schedule-row"><span>Saturday</span><span>Heated Power - 9:00 AM</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="yoga-card">
+                        <img src="./assets/images/Yoga_for_Men.webp" alt="Yoga for Men">
+                        <div class="card-content">
+                            <h3>Yoga for Men</h3>
+                            <p>Focus on flexibility, posture & recovery.</p>
+                            <div class="schedule">
+                                <div class="schedule-row"><span>Wednesday</span><span>Stretch + Strength - 6:30
+                                        PM</span>
+                                </div>
+                                <div class="schedule-row"><span>Sunday</span><span>Recovery Flow - 10:00 AM</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="yoga-card">
+                        <img src="./assets/images/Family Yoga.webp" alt="Family Yoga">
+                        <div class="card-content">
+                            <h3>Family Yoga</h3>
+                            <p>Bonding sessions for parents and kids.</p>
+                            <div class="schedule">
+                                <div class="schedule-row"><span>Saturday</span><span>Playful Flow - 3:00 PM</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="yoga-card">
+                        <img src="./assets/images/Aerial_Yoga.webp" alt="Aerial Yoga">
+                        <div class="card-content">
+                            <h3>Aerial Yoga</h3>
+                            <p>Yoga meets gravity-defying fun and flow.</p>
+                            <div class="schedule">
+                                <div class="schedule-row"><span>Wednesday</span><span>Flight Class - 4:30 PM</span>
+                                </div>
+                                <div class="schedule-row"><span>Saturday</span><span>Inversion Play - 11:00 AM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- pricing  -->
+        <section id="programs" class="pricing-section">
+            <div class="container">
+                <h2 class="pricing-title">Yoga Membership Plans</h2>
+                <p class="pricing-note">First Timers get a free <span class="logo">Lotusforever&#174;</span> Yoga Mat!
+                </p>
+                <div class="pricing-cards">
+
+                    <div class="pricing-card">
+                        <h3>1 Month</h3>
+                        <p class="desc">Perfect for beginners</p>
+                        <p class="price"><strong>€25</strong></p>
+                        <ul class="features">
+                            <li>✅ Unlimited Classes</li>
+                            <li> - Online Streaming</li>
+                            <li> - Free Yoga Mat</li>
+                            <li> - 1-on-1 Session</li>
+                            <li> - Member Retreat Invite</li>
+                        </ul>
+                        <a href="#" class="btn">Register!</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3>3 Months</h3>
+                        <p class="desc">Unlimited access + 10% discount</p>
+                        <p class="price"><span class="was">Was €75</span> <strong>Now €67.5</strong></p>
+                        <ul class="features">
+                            <li>✅ Unlimited Classes</li>
+                            <li>✅ Online Streaming</li>
+                            <li> - Free Yoga Mat</li>
+                            <li> - 1-on-1 Session</li>
+                            <li> - Member Retreat Invite</li>
+                        </ul>
+                        <a href="#" class="btn">Register!</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3>6 Months</h3>
+                        <p class="desc">Unlimited access + 10% discount</p>
+                        <p class="price"><span class="was">Was €150</span> <strong>Now €135</strong></p>
+                        <ul class="features">
+                            <li>✅ Unlimited Classes</li>
+                            <li>✅ Online Streaming</li>
+                            <li>✅ Free Yoga Mat</li>
+                            <li>✅ 1-on-1 Session</li>
+                            <li> - Member Retreat Invite</li>
+                        </ul>
+                        <a href="#" class="btn">Register!</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3>12 Months</h3>
+                        <p class="desc">Unlimited access + 10% discount</p>
+                        <p class="price"><span class="was">Was €300</span> <strong>Now €270</strong></p>
+                        <ul class="features">
+                            <li>✅ Unlimited Classes</li>
+                            <li>✅ Online Streaming</li>
+                            <li>✅ Free Yoga Mat</li>
+                            <li>✅ 1-on-1 Session</li>
+                            <li>✅ Member Retreat Invite</li>
+                        </ul>
+                        <a href="#" class="btn">Register!</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- tutor -->
+        <section id="tutors" class="tutors-section">
+            <div class="container">
+                <h2 class="section-title">Committed to a Wholesome and Balanced Practice</h2>
+                <p class="section-subtitle">Our tutors combine the perfect recipe of knowledge and effective support to
+                    help you balance mentally and physically.</p>
+
+                <div class="tutor-cards">
+
+                    <div class="tutor-card">
+                        <img src="./assets/images/tutor1.jpg" alt="Tutor Name">
+                        <h3>Amara Devi</h3>
+                        <p>Hatha & Mindfulness Specialist</p>
+                    </div>
+
+                    <div class="tutor-card">
+                        <img src="./assets/images/tutor2.jpg" alt="Tutor Name">
+                        <h3>Raj Singh</h3>
+                        <p>Ashtanga & Breathwork Coach</p>
+                    </div>
+
+                    <div class="tutor-card">
+                        <img src="./assets/images/tutor3.jpg" alt="Tutor Name">
+                        <h3>Luna Ortega</h3>
+                        <p>Yin Yoga & Mobility Guide</p>
+                    </div>
+
+                    <div class="tutor-card">
+                        <img src="./assets/images/tutor4.jpg" alt="Tutor Name">
+                        <h3>Kai Tanaka</h3>
+                        <p>Power Yoga & Alignment Mentor</p>
+                    </div>
+
+                    <div class="tutor-card">
+                        <img src="./assets/images/team2.JPG" alt="Tutor Name">
+                        <h3>Sofia Petrov</h3>
+                        <p>Vinyasa Flow Expert</p>
+                    </div>
+
+                    <div class="tutor-card">
+                        <img src="./assets/images/team3.JPG" alt="Tutor Name">
+                        <h3>Elijah Brooks</h3>
+                        <p>Restorative Yoga & Meditation</p>
+                    </div>
+
+                    <div class="tutor-card">
+                        <img src="./assets/images/team4.PNG" alt="Tutor Name">
+                        <h3>Maya Thompson</h3>
+                        <p>Kundalini & Energy Flow Coach</p>
+                    </div>
+
+                    <div class="tutor-card">
+                        <img src="./assets/images/team1.JPG" alt="Tutor Name">
+                        <h3>Arjun Patel</h3>
+                        <p>Yoga Philosophy & Lifestyle Mentor</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-newsletter">
+                    <h2>Subscribe to our newsletter</h2>
+                    <p>Monthly digest of what's new and exciting from us.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email address" required>
+                        <button class="btn" type="submit">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h3 class="visually-hidden">Main Navigation</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Classes</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="link-column">
+                        <h3 class="visually-hidden">Legal and Info</h3>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Site Map</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a class="text-decoration-none me-3" href="https://www.facebook.com" target="_blank"
+                        aria-label="Facebook" title="Facebook">
+                        <i class="text-cl-socials fs-1 fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                    <a class="text-decoration-none me-3" href="https://www.linkedin.com" target="_blank"
+                        aria-label="LinkedIn" title="LinkedIn">
+                        <i class="text-cl-socials fs-1 fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                    <a class="text-decoration-none" href="https://www.instagram.com" target="_blank"
+                        aria-label="Instagram" title="Instagram">
+                        <i class="text-cl-socials fs-1 fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <p>&copy; <span id="copy-right"></span> <span class="logo">Lotusforever&reg;</span>. All rights
+                    reserved.</p>
+            </div>
+        </div>
     </footer>
-    <!-- fontawesome script  -->
+
+    <!-- fontawesome and javascript script  -->
     <script src="https://kit.fontawesome.com/0e95d75add.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("copy-right").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

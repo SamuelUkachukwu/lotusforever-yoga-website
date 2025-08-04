@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="lotusforever yoga website ballinasloe ireland">
+    <meta name="keywords" content="yoga, fitness, meditation, health and wellbing, peace, mental health">
+    <meta name="author" content="Samuel Ukachukwu">
+    <link rel="icon" href="assets/images/icon.png">
+    <title>Sign Up - Lotusforever</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a class="logo" href="/"><span>Lotusforever</span><i class="fas fa-spa"></i></a>
+
+            <a href=" #">login</a>
+        </nav>
+
+    </header>
+    <div class="signup-wrapper">
+        <main class="signup-container">
+            <form class="signup" action="#" method="post">
+                <div>
+                    <h3>Not yet a member? Sign up!</h3>
+                </div>
+
+                <div>
+                    <label for="fullname">Full Name:</label>
+                    <input class="input-area" id="fullname" type="text" placeholder="Full Name..." required>
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input class="input-area" id="email" type="email" name="email" placeholder="example@email.com"
+                        required>
+                </div>
+
+                <div>
+                    <label for="password">Password:</label>
+                    <input class="input-area" id="password" type="password" name="password" placeholder="********">
+                </div>
+
+                <div>
+                    <label for="phonenumber">Phone Number:</label>
+                    <input class="input-area" id="phonenumber" type="tel" name="phone" placeholder="Phone number">
+                </div>
+
+                <div class="select-field">
+                    <label for="age">Age:</label>
+                    <select id="age" name="age">
+                        <option value="15+">15 - 24</option>
+                        <option value="20+">25 - 34</option>
+                        <option value="30+">35 - 44</option>
+                        <option value="40+">45 - 54</option>
+                        <option value="50+">55+</option>
+                    </select>
+
+                    <label for="classchoice">Class Select:</label>
+                    <select id="classchoice" name="yoga-classes">
+                        <option value="12">12-months</option>
+                        <option value="6">6-months</option>
+                        <option value="3">3-months</option>
+                        <option value="3">1-months</option>
+                    </select>
+                </div>
+
+                <div>
+                    <button class="btn" style="width: 100%;" type="submit"><strong>Sign Up</strong></button>
+                </div>
+            </form>
+        </main>
+
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-newsletter">
+                    <h2>Subscribe to our newsletter</h2>
+                    <p>Monthly digest of what's new and exciting from us.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email address" required>
+                        <button class="btn" type="submit">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h3 class="visually-hidden">Main Navigation</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Classes</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="link-column">
+                        <h3 class="visually-hidden">Legal and Info</h3>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Site Map</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a class="text-decoration-none me-3" href="https://www.facebook.com" target="_blank"
+                        aria-label="Facebook" title="Facebook">
+                        <i class="text-cl-socials fs-1 fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                    <a class="text-decoration-none me-3" href="https://www.linkedin.com" target="_blank"
+                        aria-label="LinkedIn" title="LinkedIn">
+                        <i class="text-cl-socials fs-1 fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                    <a class="text-decoration-none" href="https://www.instagram.com" target="_blank"
+                        aria-label="Instagram" title="Instagram">
+                        <i class="text-cl-socials fs-1 fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <p>&copy; <span id="copy-right"></span> <span class="logo">Lotusforever&reg;</span>. All rights
+                    reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- fontawesome and javascript script  -->
+    <script src="https://kit.fontawesome.com/0e95d75add.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("copy-right").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
