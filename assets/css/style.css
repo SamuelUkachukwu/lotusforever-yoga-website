@@ -217,28 +217,6 @@ html {
     rotate: 45deg;
 }
 
-.hero-content {
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    position: fixed;
-
-    z-index: 999;
-    padding: 2rem;
-    border-radius: 10px;
-
-    opacity: 1;
-    transition: opacity 0.1s ease;
-
-    width: 80%;
-    height: 80%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-}
-
 .hero-blinds {
     width: 1000px;
     height: 1000px;
@@ -268,19 +246,77 @@ html {
     right: -1000px;
 }
 
-.box {
-    flex: 1;
-}
-
-.box1 {
+.hero-content {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    /* background-color: aqua; */
 }
 
-.box1-header {
-    padding: 1rem;
+.hero-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 2rem;
     border-radius: 10px;
+}
+
+.hero-cont-left {
+    flex: 1 1 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* text-align: center; */
+    flex-direction: column;
+}
+
+.hero-cont-right {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.video-box {
+    display: flex;
+    gap: 1rem;
+}
+
+.box {
+    width: 194px;
+    height: 400px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-1-header {
+    padding: 1rem;
+    text-transform: uppercase;
     font-size: clamp(2rem, 5vw, 3rem);
     line-height: 1.2;
     color: #fff;
@@ -289,16 +325,15 @@ html {
     text-shadow: 2px 2px 8px #000;
 }
 
-.box1-quote {
+.box-1-quote {
     padding: 1rem;
     border-radius: 10px;
 
-    width: 70%;
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
 
-.box1-quote span {
+.box-1-quote span {
     display: block;
     text-align: end;
 }
@@ -338,12 +373,14 @@ html {
 
 .box-client {
     padding: 1rem;
-    padding-top: 2rem;
+}
+
+.box-client-2 {
+    display: none;
 }
 
 .box-client-img {
     display: flex;
-    padding-left: 1rem;
 }
 
 .box-client-img>* {
@@ -364,11 +401,7 @@ html {
 
 .box-client p {
     font-size: 12px;
-    padding-bottom: 20px;
-}
-
-.box-client-img {
-    padding-left: 0;
+    padding-bottom: 10px;
 }
 
 /* tutor section */
@@ -724,9 +757,6 @@ select:focus {
 }
 
 @media (max-width: 1200px) {
-    .box1-quote {
-        width: 100%;
-    }
 
     .cards-container {
         column-count: 3;
@@ -734,7 +764,7 @@ select:focus {
 }
 
 @media(max-width: 1020px) {
-    .box1-quote {
+    .box-1-quote {
         font-size: 0.9rem;
     }
 }
@@ -747,6 +777,21 @@ select:focus {
     .cards-container {
         column-count: 2;
     }
+
+    .box {
+        width: 138px;
+        height: 328px;
+    }
+
+    .box-1-header {
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .box-1-quote {
+        display: none;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -767,51 +812,15 @@ select:focus {
         display: none;
     }
 
-    video {
-        height: 500px;
-        width: auto;
-    }
-
-    .hero-content {
-        flex-direction: column;
-    }
-
-    .box {
-        width: 100%;
-    }
-
-    .box1-header {
-        height: 100%;
-        margin-bottom: 0;
-        text-align: center;
-    }
-
-    .box1-quote {
+    .box-1-quote,
+    */ .box-client {
         display: none;
     }
 
-    .box-cta {
-        position: absolute;
-        bottom: 5%;
-        left: 50%;
-        transform: translateX(-50%);
-        justify-content: center;
-        z-index: 999;
-        width: 80%;
-    }
-
-    .box-client {
-        position: absolute;
-        bottom: -10%;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 1rem;
-        background-color: #ee41b4;
-        border-radius: 10px;
-    }
-
-    .box-client p {
+    .box-client-2 {
+        display: block;
         text-align: center;
+        margin-top: 3rem;
     }
 
     .footer-wrapper {
@@ -845,6 +854,15 @@ select:focus {
 
     #mobile-nav {
         display: none !important;
+    }
+
+    .hero-cont-left {
+        flex: 0 0 41.6667%;
+    }
+
+    .hero-cont-right {
+        flex: 0 0 58.3333%;
+        margin-top: 0;
     }
 }
 
