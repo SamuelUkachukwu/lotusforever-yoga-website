@@ -31,6 +31,7 @@ mobileNavLinks.forEach(link => {
     link.addEventListener('click', () => {
         mobileNav.classList.remove('active');
         menuButton.classList.remove('open');
+        enableScroll();
     });
 });
 

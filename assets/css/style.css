@@ -195,7 +195,7 @@ html {
 
 /* layout of page  */
 .wrapper {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .hero-container {
@@ -315,9 +315,9 @@ html {
 }
 
 .box-1-header {
-    padding: 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     text-transform: uppercase;
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(1.8rem, 5vw, 3rem);
     line-height: 1.2;
     color: #fff;
     font-family: 'Roboto', sans-serif;
@@ -820,7 +820,7 @@ select:focus {
     .box-client-2 {
         display: block;
         text-align: center;
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
 
     .footer-wrapper {
@@ -894,5 +894,9 @@ select:focus {
     .signup-container {
         margin: 1rem;
         padding: 2rem 1.5rem;
+    }
+
+    .box-2 {
+        display: none;
     }
 }
