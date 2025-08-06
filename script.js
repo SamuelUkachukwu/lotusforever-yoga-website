@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }, 0.3);
 
     //Display the Hero Text
-    tl.to('.hero h1', {
+    tl.to('.hero-text', {
         autoAlpha: 1,
         y: 0,
         duration: 1,
